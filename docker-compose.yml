@@ -1,0 +1,7 @@
+services:
+  jupyter:
+    image: "quay.io/jupyter/minimal-notebook"
+    ports:
+      - "8888:8888"
+    volumes:
+      - "${PWD-.}/notebooks:/home/jovyan"
